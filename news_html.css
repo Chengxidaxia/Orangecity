@@ -24,4 +24,5 @@ body { background-color:#FFFFFF; background-image: url(images/b5f5ef32c7d0144dd0
 #container_5367cd03_padding { margin: 10px; display: block;  }
 #text_fdbfed7 { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none;  }
 .textstyle4 { font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#FFFF00;  }
-.textstyle5 { font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle5 { font-size:16pt; font-family:Arial, Helvetica, sans-serif; color:#AFAFAF; font-style:italic;  }
+.textstyle6 { font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
