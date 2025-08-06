@@ -39,7 +39,36 @@ html, body { min-height: 100% }
         0 20px 40px rgba(0,0,0,0.5),
         0 0 40px rgba(100,180,255,0.8),
         0 0 60px rgba(100,150,255,0.5); /* 强发光效果 */
-}body { background-color:#FFFFFF; background-image: url(images/b5f5ef32c7d0144dd0f4a67e4105134d.jpg); background-position:top left; background-size:cover; padding:0;  margin: 0; }
+}
+#container_61d4c6b3.turn_box {
+    transform: translateY(0);
+    transition: transform 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+/* 鼠标悬停状态 */
+#container_61d4c6b3.turn_box:hover {
+    transform: translateY(-1000px);
+}
+/* 初始状态 - 微弱发光 */
+#container_61d4c6b3.turn_box {
+    transform: translateY(0);
+    box-shadow: 
+        0 5px 15px rgba(0,0,0,0.4),
+        0 0 15px rgba(100,150,255,0.2); /* 初始微弱发光 */
+    transition: 
+        transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+        box-shadow 0.8s ease-out;
+}
+
+/* 悬停状态 - 向上位移并强发光 */
+#container_61d4c6b3.turn_box:hover {
+    transform: translateY(-50px);
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.5),
+        0 0 40px rgba(100,180,255,0.8),
+        0 0 60px rgba(100,150,255,0.5); /* 强发光效果 */
+}
+body { background-color:#FFFFFF; background-image: url(images/b5f5ef32c7d0144dd0f4a67e4105134d.jpg); background-position:top left; background-size:cover; padding:0;  margin: 0; }
 .textstyle1 { text-align:left; }
 #container_694ba68e { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:1630px; background:none;  }
 #container_694ba68e_padding { margin: 10px; display: block;  }
